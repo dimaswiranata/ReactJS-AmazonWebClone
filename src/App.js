@@ -6,6 +6,8 @@ import {
 } from "react-router-dom";
 import './App.css';
 import Header from "./Header";
+import Home from "./Home";
+import Checkout from './Checkout';
 
 function App() {
   return (
@@ -16,12 +18,13 @@ function App() {
             <h1>LOGIN PAGE</h1>
           </Route>
           <Route path="/checkout">
-            <h1>CHECKOUT PAGE</h1>
+            <Header/>
+            <Checkout/>
           </Route>
           {/* default route */}
           <Route path="/">
             <Header/>
-            <h1>HOME PAGE</h1>
+            <Home/>
           </Route>
         </Switch>
       </div>
